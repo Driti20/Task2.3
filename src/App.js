@@ -50,7 +50,7 @@ function App() {
           <div className="cards" onClick={hider}>
             <div className="card">
               <div className="Images">
-                <img src={Img} alt="image" />
+                <img src={Img} alt="Images" />
               </div>
               <div className="title">
                 <h2>About us</h2>
