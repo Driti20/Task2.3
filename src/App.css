@@ -1,5 +1,36 @@
 .App {
-  text-align: center;
+  margin: 20px;
+
+  border: 1px solid #b3b0b0;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px 20px 10px 10px ;
+}
+.card {
+  display: inline-flex;
+  align-items: center;
+}
+.cards2{
+  border-top: 1px solid #b3b0b0;
+  
+}
+.cards2>*{
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  justify-content: space-between; 
+}
+.cards2>*>*{
+  margin:20px 0;
+}
+.card3, .card4, .card5{
+  border-top: 1px solid #b3b0b0;
+}
+.title > * {
+  margin: 10px;
 }
 
 .App-logo {
@@ -28,6 +59,139 @@
   color: #61dafb;
 }
 
+.openArrow {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+.openArrow::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  left: 4px;
+  top: 2px;
+}
+.rightArrow {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px
+}
+.rightArrow::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  right: 6px;
+  top: 4px
+}
+.closeArrow {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px
+}
+.closeArrow::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  left: 4px;
+  bottom: 2px
+}
+.rightArrow::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  right: 6px;
+  top: 4px
+}
+.closeArrow {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px
+}
+.closeArrow::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  left: 4px;
+  bottom: 2px
+}
+.closeArrow2 {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px
+}
+.closeArrow2::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  left: 4px;
+  bottom: 2px
+}
+@media only screen and (max-width:330px) {
+  .App{
+    margin:20px 5px;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
